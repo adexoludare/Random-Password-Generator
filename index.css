@@ -28,11 +28,10 @@ Responsive layout grid
 @media (max-width: 769px) {
     body{
         margin: 0 auto;
-    }
-    .container{
-        width: 90%;
         background: #1F2937;
         color: white;
+    }
+    .container{
         box-sizing: border-box;
         padding: 4% 8%;
         display: flex;
