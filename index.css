@@ -1,70 +1,175 @@
-.main-container{
-    width: 550px;
-    height: 550px;
-    background: #1F2937;
-    color: white;
-    margin: 0 auto;
-    /* background: #ECFDF5;  */
+/* # Breakpoints
+	For Mobile Devices – 320px — 480px
+	iPads and Tablets – 481px — 768px
+	Laptops and small screen – 769px — 1024px
+	Large screens and Desktops – 1025px — 1200px
+	TV and Extra Large Screens – 1201px and more
+
+Responsive layout grid
+	For Mobile Devices – 320px — 480px
+	1. Columns - 4
+	2. Gutters -  8px, 16px
+	3. Margins - 16px
+
+	iPads and Tablets – 481px — 768px
+	1. Columns - 8
+	2. Gutters - 8px, 16px, 24px
+	3. Margins - 32px
+
+	Laptops and small screen – 769px — 1024px
+	1. Columns - 12
+	2. Gutters - 8px, 16px, 24px
+	3. Margins - 64px - 200px
+                     row grid count- 800px
+	type : top- 8px
+	offset, gutter -0 */
+
+
+@media (max-width: 769px) {
+    body{
+        margin: 0 auto;
     }
-.container{
-    padding: 32px 64px ;
-}
-p{
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
+    .container{
+        width: 90%;
+        background: #1F2937;
+        color: white;
+        box-sizing: border-box;
+        padding: 4% 8%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    p{
+        font-family: Inter;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 80%;
+        text-align: left;
+    }
+    h2{
+        font-family: Karla;
+        font-size: 2.5rem;
+        font-weight: 800;
+        /* line-height: 40px; */
+        letter-spacing: -0.025em;
+        text-align: left;
+    }
+    
+    .green-text{
+        color:  #55F991;
+    }
+    .password-screen{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5% auto;
+    }
 
+    #password1-el, #password2-el{
+        width: 12rem;
+        height: 3rem;
+        background: #273549;
+        color: #5DEF92;
+        border-radius: 6px;
+        margin: 4px 8px;
+        font-family: Inter;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: center;
+    
+    }
+    button{
+        /* width: 10rem; */
+        height: 3rem;
+        color: #FFFFFF;
+        background: #5DEF92;
+        /* padding: 9px 17px 9px 15px; */
+        border-radius: 6px;
+        border: none;
+        margin: 2% auto;
+        font-size: larger;
+    }
+    
+    hr{
+        width: 446px;
+        border: 1px solid #2F3E53
+    }
+    .user-input{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
-h2{
-    font-family: Karla;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 40px;
-    letter-spacing: -0.025em;
-    text-align: left;
-}
-
-.green-text{
-    color:  #55F991;
-}
-
-.password-screen{
-    display: flex;
-}
-#password1-el, #password2-el{
-    width: 211px;
-    height: 39px;
-    background: #273549;
-    color: #5DEF92;
-    border-radius: 6px;
-    margin: 4px 8px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 40px;
-    text-align: center;
-
-}
-button{
-    width: 191px;
-    height: 42px;
-    color: #FFFFFF;
-    background: #5DEF92;
-    padding: 9px 17px 9px 15px;
-    border-radius: 6px;
-    border: none;
-    margin-bottom: 32px;
-}
-
-hr{
-    width: 446px;
-    border: 1px solid #2F3E53
-}
-.user-input{
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
+    /* Laptops and small screen – 769px — 1024px */
+@media (min-width: 769px){
+    .main-container{
+        width: 550px;
+        height: 550px;
+        background: #1F2937;
+        color: white;
+        margin: 0 auto;
+        /* background: #ECFDF5;  */
+        }
+    .container{
+        padding: 32px 64px ;
+    }
+    p{
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+    
+    }
+    
+    h2{
+        font-family: Karla;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 40px;
+        letter-spacing: -0.025em;
+        text-align: left;
+    }
+    
+    .green-text{
+        color:  #55F991;
+    }
+    
+    .password-screen{
+        display: flex;
+    }
+    #password1-el, #password2-el{
+        width: 211px;
+        height: 39px;
+        background: #273549;
+        color: #5DEF92;
+        border-radius: 6px;
+        margin: 4px 8px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: center;
+    
+    }
+    button{
+        width: 191px;
+        height: 42px;
+        color: #FFFFFF;
+        background: #5DEF92;
+        padding: 9px 17px 9px 15px;
+        border-radius: 6px;
+        border: none;
+        margin-bottom: 32px;
+    }
+    
+    hr{
+        width: 446px;
+        border: 1px solid #2F3E53
+    }
+    .user-input{
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
